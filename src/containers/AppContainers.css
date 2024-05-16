@@ -1,0 +1,67 @@
+.countryList {
+    width:300px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    height: 600px;
+    overflow-y: auto ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.countryList > div {
+    border: 1px solid black;
+    margin: 10px 0;
+    width: 200px;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.countryList > div:hover {
+    box-shadow: none;
+    scale: 1.1;
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+.CountryInfo {
+    width: 700px;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    left: 40%;
+    top: 25%;
+    position: relative;
+    border: 10px solid;
+    border-color: rgba(255, 255, 255, 0.15) rgba(255, 255, 255, 0.25) rgba(255, 255, 255, 0.35) rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.containerSpin {
+    width: 700px;
+    height: 400px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.none {
+    display: none;
+}
